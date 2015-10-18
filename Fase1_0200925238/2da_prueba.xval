@@ -1,0 +1,31 @@
+<EVALUADOR> Proyecto_LFP
+
+<<DECLARACIONES>>
+{
+A : Entero [1..10] ;
+Valor1 : Caracter [chr(65)..chr(71)]
+Alto : Entero ;
+B , C , ER ;
+}
+
+
+<<DEFINICIONES>>
+{
+A == 3 + ( 9 * 87 ) - 12 ;
+Valor1 == 'abc' ||| 'xyz' ;
+Alto == Multiplicacion ( A , 23 );
+B == 0 | 1 | E ;
+C == ( ab | 01 ) F * ;
+}
+
+
+<<RESULTADOS>>
+{
+Escribir ( A ) ;
+Escribir ( " Los Valores de Alto y caracter son : " Alto, Valor1 ) ;
+Graph ( B ) ;
+Graph ( C ) ;
+}
+
+<FIN EVALUADOR>
+
